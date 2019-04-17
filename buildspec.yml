@@ -11,4 +11,10 @@ phases:
             # - npm run-script build
              - ng build --prod 
             
-   
+   artifacts:
+  files:
+     - '*'
+    # - location
+  #name: $(date +%Y-%m-%d)
+  #discard-paths: yes
+  base-directory: 'dist1'
